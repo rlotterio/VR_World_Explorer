@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MapsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="200dp"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/departure_autocomplete_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <fragment
+            android:id="@+id/arrival_autocomplete_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/search_location"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:textSize="12dp"
+            android:layout_gravity="top|right"
+            android:text="Cerca un luogo" />
+
+        <Button
+            android:id="@+id/search_route"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:textSize="12dp"
+            android:layout_gravity="top|right"
+            android:text="Calcola un percorso" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_gravity="top|right"
+        android:background="@color/white"
+        android:layout_marginRight="210dp"
+        android:layout_marginTop="15dp" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_gravity="top|right"
+        android:background="@color/white"
+        android:layout_marginRight="210dp"
+        android:layout_marginTop="45dp" />
+
+    <Spinner
+        android:id="@+id/layers_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/infodistance"
+            android:layout_width="140dp"
+            android:layout_height="20dp"
+            android:background="@color/white"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/infoduration"
+            android:layout_width="140dp"
+            android:layout_height="20dp"
+            android:background="@color/white"
+            android:textColor="@color/black" />
+    </LinearLayout>
+</fragment>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">VR World Explorer</string>
+    <string name="title_activity_maps">Mappe</string>
+    <string name="title_activity_streetview">Streetview</string>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#D3D3D3</color>
+    <string name="hybrid">Ibrida</string>
+    <string name="normal">Predefinita</string>
+    <string name="satellite">Satellite</string>
+    <string name="terrain">Rilievo</string>
+
+
+    <string-array name="layers_array">
+        <item>@string/normal</item>
+        <item>@string/hybrid</item>
+        <item>@string/satellite</item>
+        <item>@string/terrain</item>
+    </string-array>
+</resources>
