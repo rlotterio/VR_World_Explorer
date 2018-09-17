@@ -372,7 +372,7 @@ public class StreetViewActivity extends FragmentActivity implements OnStreetView
 
                     try
                     {
-                        Thread.sleep(2000);
+                        Thread.sleep(1000);
                     }
                     catch(InterruptedException ex)
                     {
